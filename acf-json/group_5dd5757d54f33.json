@@ -77,8 +77,17 @@
                 "id": ""
             },
             "choices": {
-                "green_wall": "Green wall and white door",
-                "grey_wall": "Grey wall and chair"
+                "green_wall": "Green Wall and White Door",
+                "chair_grey_wall": "Grey Wall and Green Chair",
+                "door_grey_wall": "Grey Wall and White Door",
+                "green_wall_chair": "Green Wall and Traditional Chair",
+                "red_wall_chair": "Red Wall and Traditional Chair",
+                "red_wall_door": "Red Wall and White Door",
+                "red_wall_med_max": "Red Wall Medium (Max)",
+                "red_wall_med_min": "Red Wall Medium (Min)",
+                "small_green": "Small, Green Wall",
+                "small_grey": "Small, Grey Wall",
+                "small_red": "Small, Red Wall"
             },
             "default_value": [],
             "allow_null": 0,
@@ -829,5 +838,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1575564495
+    "modified": 1577984421
 }

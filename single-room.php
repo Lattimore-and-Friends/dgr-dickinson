@@ -16,20 +16,71 @@
                         $background = get_field('background_selector');
                         $background_url;
                         $foreground_img_width = get_field('foreground_number');
-                        $foreground_proportion = $foreground_img_width * 100 / 615; ?>
 
-                        <?php   if($background == 'green_wall') {
+                        if($background == 'green_wall') {
                             $background_url = get_template_directory_uri() . '/img/Large-scene-without-frame.jpg';
+                            $background_width = 615;
                         }
-                        elseif($background == 'grey_wall') {
-                            $background_url = get_template_directory_uri() . '/img/Grey_wall_Chair.jpg';
-                        } ?>
+                        elseif($background == 'chair_grey_wall') {
+                            $background_url = get_template_directory_uri() . '/img/Large-scene_Contemporary_Chair_Grey.jpg';
+                            $background_width = 615;
+                            $additional_styling = "left: 0; right: 0; margin: auto;";
+                        }
+                        elseif($background == 'door_grey_wall') {
+                            $background_url = get_template_directory_uri() . '/img/Large-scene_Contemporary_Door_Grey.jpg';
+                            $background_width = 615;
+                        }
+                        elseif($background == 'green_wall_chair') {
+                            $background_url = get_template_directory_uri() . '/img/Large-scene_Traditional_Chair_Green.jpg';
+                            $background_width = 615;
+                            $additional_styling = "left: 0; right: 0; margin: auto;";
+                        }
+                        elseif($background == 'red_wall_chair') {
+                            $background_url = get_template_directory_uri() . '/img/Large-scene_Traditional_Chair_Red.jpg';
+                            $background_width = 615;
+                            $additional_styling = "left: 0; right: 0; margin: auto;";                                                        
+                        }
+                        elseif($background == 'red_wall_door') {
+                            $background_url = get_template_directory_uri() . '/img/Large-scene_Traditional_Door_Red.jpg';
+                            $background_width = 615;
+                        }
+                        elseif($background == 'red_wall_med_max') {
+                            $background_url = get_template_directory_uri() . '/img/Medium-scene_Maximum-AW-size.jpg';
+                            $background_width = 170;
+                            $additional_styling = "top: 100px; left: 0; right: 0; margin: auto;";
+                        }
+                        elseif($background == 'red_wall_med_min') {
+                            $background_url = get_template_directory_uri() . '/img/Medium-scene_Minimum-AW-size.jpg';
+                            $background_width = 154;
+                            $additional_styling = "top: 100px; left: 0; right: 0; margin: auto;";
+                        }
+                        elseif($background == 'small_green') {
+                            $background_url = get_template_directory_uri() . '/img/Small-scene_Green-wall.jpg';
+                            $background_width = 123;
+                            $additional_styling = "top: 50px; left: 0; right: 0; margin: auto;";
+                        }
+                        elseif($background == 'small_grey') {
+                            $background_url = get_template_directory_uri() . '/img/Small-scene_Grey-wall.jpg';
+                            $background_width = 123;
+                            $additional_styling = "top: 50px; left: 0; right: 0; margin: auto;";
+                        }
+                        elseif($background == 'small_red') {
+                            $background_url = get_template_directory_uri() . '/img/Small-scene_Red-wall.jpg';
+                            $background_width = 123;
+                            $additional_styling = "top: 50px; left: 0; right: 0; margin: auto;";
+
+                        }
+
+                        $foreground_img_width = $foreground_img_width * 100;
+                        $foreground_proportion =  $foreground_img_width / $background_width;
+
+                      ?>
 
 
                     <?php if( get_field('background_selector') ): ?>
                         <div class="hero-container">
                             <img class="roompage-hero-background__img" src="<?php echo $background_url; ?>" />
-                            <img class="roompage-hero-foreground__img" src="<?php the_field('foreground_image');?>" style="width: <?php echo $foreground_proportion . "%" ?>" />
+                            <img class="roompage-hero-foreground__img" src="<?php the_field('foreground_image');?>" style="width: <?php echo $foreground_proportion . "%" ?>; <?php echo $additional_styling; ?>" />
                         </div>
                     <?php endif; ?>
 
