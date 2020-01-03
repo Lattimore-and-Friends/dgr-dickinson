@@ -1,0 +1,46 @@
+.norooms-container-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #FFFDED;
+  overflow: hidden;
+  @include respond-to('sm') {
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  padding-bottom: 25px;
+  padding-right: 0;
+  }
+}
+
+.norooms-logo-section {
+  @include respond-to('sm') {
+  margin: 0 auto;
+  }
+
+&__logo {
+  max-width: 235px;
+  height: auto;
+  padding-top: 15px;
+}
+}
+
+.norooms-header-desktop {
+  display: none;
+  @include respond-to('sm') {
+  display: block;
+  padding-top: 15px;
+  font-family: $Cardo;
+  font-style: italic;
+  font-size: 1.0625rem;
+  }
+}

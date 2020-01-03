@@ -1,0 +1,209 @@
+.rooms-body {
+  background-color: #FFFDED;
+}
+
+.rooms-container-header {
+  position: fixed;
+  top: 0;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #FFFDED;
+  z-index: 999;
+  @include respond-to('sm') {
+  max-width: 1050px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  padding-bottom: 25px;
+  padding-right: 0;
+  }
+}
+
+.rooms-logo-section {
+  @include respond-to('sm') {
+  margin: 0 auto;
+  }
+
+&__logo {
+  max-width: 235px;
+  height: auto;
+  padding-top: 15px;
+}
+}
+
+.rooms-header-desktop {
+  display: none;
+  @include respond-to('sm') {
+  display: block;
+  padding-top: 15px;
+  font-family: $Cardo;
+  font-style: italic;
+  font-size: 1.0625rem;
+  }
+}
+
+.rooms-hamburger-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5px;
+  padding-left: 35px;
+  @include respond-to('sm') {
+  margin-right: 10px;
+  }
+}
+
+#rooms-menu__toggle {
+  opacity: 0;
+  }
+
+  /* button styles */
+  .rooms-menu__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; 
+  -webkit-box-align: center; 
+      -ms-flex-align: center; 
+          align-items: center; 
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 1;
+  }
+
+  /* hamburger */
+  .rooms-menu__button > span,
+  .rooms-menu__button > span::before,
+  .rooms-menu__button > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  }
+
+  .rooms-menu__button > span::before {
+    content: '';
+  top: -8px;
+  }
+
+  .rooms-menu__button > span::after {
+    content: '';
+  top: 8px;
+  }
+
+  .rooms-menu__rooms {
+  margin-top: 20px;
+  font-family: $Cardo;
+  font-style: italic;
+  font-size: 0.875rem;
+  }
+
+  .rooms-menu__box {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 138px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #404040;
+    -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+            box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    -webkit-transition-duration: .60s;
+         -o-transition-duration: .60s;
+            transition-duration: .60s;
+    @include respond-to('sm') {
+    width: 336px;
+    }
+  }
+  /* menu elements */
+  .menu__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 12px 40px;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition-duration: .60s;
+         -o-transition-duration: .60s;
+            transition-duration: .60s;
+    cursor: pointer;
+
+  &-author {
+    padding-bottom: 20px;
+    font-family: $Cinzel;
+    font-size: 1rem;
+  }
+
+  &-name {
+    padding-bottom: 38px;
+    font-family: $Cardo;
+    font-style: italic;
+    font-size: 1.0625rem;
+  }
+}
+
+  #rooms-menu__toggle:checked ~ .rooms-menu__button > span {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #rooms-menu__toggle:checked ~ .rooms-menu__button > span::before {
+    top: 0;
+    -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+            transform: rotate(0);
+  }
+  #rooms-menu__toggle:checked ~ .rooms-menu__button > span::after {
+    top: 0;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  #rooms-menu__toggle:checked ~ .rooms-menu__box {
+    right: 0;
+  }
+
+.rooms-menu__button > span,
+.rooms-menu__button > span::before,
+.rooms-menu__button > span::after {
+  -webkit-transition-duration: .25s;
+       -o-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+#rooms-menu__toggle:checked ~ .rooms-menu__button > span::after {
+  background-color: #fff;
+}
+
+#rooms-menu__toggle:checked ~ .rooms-menu__button > span::before {
+  background-color: #fff;
+}

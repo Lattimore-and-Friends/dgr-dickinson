@@ -1,0 +1,52 @@
+.roompage-downloads-section {
+    display: none;
+    @include respond-to('sm') {
+        display: block;
+        margin-bottom: 50px;
+    }
+}
+
+.roompage-downloads {
+    @include respond-to('sm') {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+}
+
+.roompage-link-container {
+width: 30%;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+text-align: center;
+}
+
+.roompage-downloads-link__info {
+    font-family: $Cardo;
+    font-style: italic;
+    font-size: 	1.0625rem;
+    max-width: 195px;
+    line-height: 24px;
+}
+
+.roompage-downloads-link {
+    display: block;
+    width: 30px;
+    height: 36px;
+    background: url(./img/adobe-sprite.png) no-repeat 0 0;
+    background-size: 30px auto;
+    margin-bottom: 20px;
+}

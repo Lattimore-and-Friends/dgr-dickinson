@@ -1,0 +1,59 @@
+.roompage-list-section {
+    display: none;
+    @include respond-to('sm') {
+        display: block;
+    }
+}
+
+.roompage-separator {
+    background: url(./img/sep-bg.png) repeat-x center center;
+    text-align: center;
+    margin: 40px 0;
+    min-height: 26px;
+    
+&-text {
+    background-color: #fffded;
+    padding: 0 25px;
+    font-family: $Cinzel;
+    text-transform: uppercase;
+    font-size: 1.3125rem;
+    line-height: 26px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    color: #af2125;
+    display: inline-block;
+}
+}
+
+.roompage-list {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-family: $Cardo;
+    font-size: 1rem;
+
+&-section__image {
+    margin-bottom: 30px;
+    padding-top: 30px;
+    @include respond-to('sm') {
+    padding-top: 56px;
+    margin-bottom: 100px;
+    }
+    
+}
+
+&-image {
+    max-width: 290px;
+    @include respond-to('sm') {
+        max-width: 672px;
+        margin: 0 auto;
+    }
+}
+}
+
+.roompage-list li {
+    min-width: 640px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    color: #404040;
+}

@@ -1,0 +1,60 @@
+.rooms-container-body {
+    margin: 0 auto;
+    max-width: 290px; 
+  @include respond-to('sm') {
+    max-width: 1020px;
+  } 
+}
+
+.rooms-hero-background__desktop {
+    display: none;
+  @include respond-to('sm') {
+    display: block;
+    padding-bottom: 70px;
+   }
+}
+
+.rooms-hero-background {
+    margin: 0 auto;
+}
+
+.rooms-hero {
+    font-size: 2.25rem;
+    font-family: $Cardo;
+    font-style: normal;
+    @include respond-to('sm') {
+    padding-bottom: 36px;
+    font-weight: lighter;
+    }
+
+&-section {
+   margin-top: 96px;
+   text-align: center;
+}
+
+&-intro {
+    padding-top: 35px;
+    font-family: $Cinzel;
+    font-size: 1rem;
+    text-transform: lowercase;
+    padding-bottom: 50px;
+    color: #000;
+    letter-spacing: 6px;
+    @include respond-to('sm') {
+    padding-top: 0;
+    }
+}
+
+&-text{
+    margin: 0 auto;
+    width: 80%;
+    font-family: $Cardo;
+    color: #B2B2B2;
+    padding-bottom: 50px;
+    line-height: 1.6;
+    @include respond-to('sm') {
+    padding-bottom: 0;
+    max-width: 730px;
+    }
+}
+}

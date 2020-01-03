@@ -1,0 +1,50 @@
+/* minion pro */
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('fonts/MinionPro-Regular.woff') format('woff2'),
+        url('fonts/MinionPro-Regular.woff') format('woff'),
+        url('fonts/MinionPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* cardo regular */
+@font-face {
+    font-family: 'Cardo';
+    src: url('fonts/Cardo-Regular.woff2') format('woff2'),
+        url('fonts/Cardo-Regular.woff') format('woff'),
+        url('fonts/Cardo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+  /* cardo italic */
+  @font-face {
+    font-family: 'Cardo';
+    src: url('fonts/Cardo-Italic.woff2') format('woff2'),
+        url('fonts/Cardo-Italic.woff') format('woff'),
+        url('fonts/Cardo-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+  /* cinzel regular */
+  @font-face {
+    font-family: 'Cinzel';
+    src: url('fonts/Cinzel-Regular.woff2') format('woff2'),
+        url('fonts/Cinzel-Regular.woff') format('woff'),
+        url('fonts/Cinzel-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+    /* helvetica neue */
+    @font-face {
+        font-family: 'Helvetica Neue';
+        src: url('fonts/HelveticaNeue.woff2') format('woff2'),
+            url('fonts/HelveticaNeue.woff') format('woff'),
+            url('fonts/HelveticaNeue.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    

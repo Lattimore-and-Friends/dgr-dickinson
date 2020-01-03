@@ -1,0 +1,133 @@
+$background-color: #303030 !default;
+$button-color: #af1a18 !default;
+
+.body-login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+    background-color: $background-color;
+}
+
+.login-logo-section {
+    margin-top: 20vh;
+    margin-bottom: 20px;
+    color: #fffded;
+    text-align: center;
+    max-width: 320px;
+&__logo {
+    font-family: $Cinzel;
+    font-size: 1.25rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 14px;
+    max-width: 235px;
+    padding-bottom: 20px;
+}
+  
+&__text{
+    // display: none;
+    font-family: $Cardo;
+    font-style: italic;
+    font-size: 1rem;
+    padding-bottom: 20px;
+    text-align: -moz-left;
+}
+}
+
+
+
+
+
+.um-misc-with-img div strong {
+    color: #fffded;
+}
+
+.um-misc-ul li a {
+    color: #fffded;
+    cursor: pointer;
+    font-family: Cardo;
+}
+
+.um-misc-ul li a:hover {
+    color: #af1a18;
+}
+
+.um-field-label label {
+    font-family: Cardo;
+    color: #fffded;
+}
+
+.um-right {
+    display: none;
+}
+
+.um-half {
+    width: 100% !important; 
+}
+
+.um input[type=submit].um-button, .um input[type=submit].um-button:focus, .um a.um-button, .um a.um-button.um-disabled:hover, .um a.um-button.um-disabled:focus, .um a.um-button.um-disabled:active {
+    background: #af1a18 !important;
+    text-transform: uppercase !important;
+    font-family: Cinzel;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    margin-top: 10%;
+    border-radius: 0 !important;
+}
+
+.um-misc-with-img {
+    display: none;
+}
+
+.um-misc-ul, .um-misc-ul li {
+    list-style: none;
+    font-size: 1.625rem !important;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.um-form input[type=text], .um-form input[type=search], .um-form input[type=tel], .um-form input[type=number], .um-form input[type=password] {
+    border-radius: 0 !important;
+}
+
+.um .um-form input[type=text], .um .um-form input[type=search], .um .um-form input[type=tel], .um .um-form input[type=number], .um .um-form input[type=password], .um .um-form textarea, .select2-container .select2-choice, .select2-container-multi .select2-choices {
+    background-color: $background-color !important;
+}
+
+.um-field-checkbox-option, .um-field-radio-option {
+    font-family: Cardo, sans-serif;
+    color: #fffded !important;
+}
+
+.um-field-checkbox:not(.um-field), .um-field-radio:not(.um-field) {
+    background-color: $background-color !important;
+}
+
+.um-icon-android-checkbox-outline-blank:before {
+    // content: "\f372";
+    color: #fffded;
+}
+
+.um .um-tip:hover, .um .um-field-radio.active:not(.um-field-radio-state-disabled) i, .um .um-field-checkbox.active:not(.um-field-radio-state-disabled) i, .um .um-member-name a:hover, .um .um-member-more a:hover, .um .um-member-less a:hover, .um .um-members-pagi a:hover, .um .um-cover-add:hover, .um .um-profile-subnav a.active, .um .um-item-meta a, .um-account-name a:hover, .um-account-nav a.current, .um-account-side li a.current span.um-account-icon, .um-account-side li a.current:hover span.um-account-icon, .um-dropdown li a:hover, i.um-active-color, span.um-active-color {
+    color: #fffded !important;
+}
+
+.um-button {
+    border-radius: 0 !important;
+}
+
+a.um-link-alt {
+    font-family: Cardo, sans-serif;
+    font-style: italic;
+    color: #fffded !important;
+}

@@ -1,0 +1,76 @@
+.um-account-side {
+    margin-top: 10%;
+    margin-left: 7%;
+    font-family: Cardo;
+}
+
+.um-account-main {
+    margin-top: 10%;
+}
+
+.um-directory.um-loaded .um-members-wrapper {
+    margin-top: 10%;
+}
+
+.um .um-button.um-alt, .um input[type=submit].um-button.um-alt {
+    color: #fff !important; 
+}
+
+.um .um-button.um-alt:before, .um input[type=submit].um-button.um-alt:before {
+    color: #fff !important; 
+}
+
+#um_field__username_b {
+    margin-top: 15%;
+}
+
+.um-account-main div.um-account-heading {
+    font-family: Cardo !important;
+    font-weight: 400 !important;
+}
+
+.um-account-name {
+    font-family: Cardo;
+}
+
+.um a.um-link {
+    color: #af191a !important;
+}
+
+.um-account-side li a span.um-account-icon, .um-account-side li a.current span.um-account-icon, .um-account-side li a.current:hover span.um-account-icon {
+    display: none;
+}
+
+.um .um-form input[type=text], .um .um-form input[type=search], .um .um-form input[type=tel], .um .um-form input[type=number], .um .um-form input[type=password], .um .um-form textarea, .select2-container .select2-choice, .select2-container-multi .select2-choices {
+    font-family: Cardo;
+}
+
+.um-account-main p {
+    font-family: Minion Pro;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-family: Minion Pro;
+}
+
+.um-field-checkbox-option, .um-field-radio-option {
+    color: #fff !important;
+}
+
+.um-account-name a {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.um-faicon-user:before {
+    display: none;
+}
+
+.um-faicon-asterisk:before {
+    display: none;
+}
+
+.um-faicon-lock:before {
+    display: none;
+}
+

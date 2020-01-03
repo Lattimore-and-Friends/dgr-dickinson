@@ -1,0 +1,128 @@
+.roompage-modal {
+    display: none;
+    position: fixed; 
+    z-index: 1000; 
+    padding-top: 35px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: #fffded; 
+
+&-content {
+    margin-top: 20%;
+    width: 100%;
+    display: block;
+    @include respond-to('sm') {
+    position: relative;
+    margin-top: 30px;
+    width: auto;
+    margin: auto;
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+}
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+  .roompage-modal-content {
+    top: 10%;
+    }
+  .roompage-modal-buttons {
+    right: 10%;
+    top: 5%;
+}
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+  .roompage-modal-content {
+  top: 10%;
+  }
+}
+  #roompage-overlay {
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
+
+  .roompage-modal-buttons {
+      right: 5%;
+      max-width: 1020px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: absolute;
+    top: 15px;
+    @include respond-to('sm') {
+        right: 20%;
+  }
+}
+
+  .roompage-close {
+      margin-left: 10px;
+    color: #000;
+    background: url(./img/x-close.png) no-repeat right center;
+    background-size: 19px auto;
+    width: 21px;
+    height: 21px;
+    content: '';
+    overflow: hidden;
+    text-indent: -9999px;
+  }
+  
+  .roompage-close:hover,
+  .roompage-close:focus,
+  .roompage-full-screen:hover,
+  .roompage-full-screen:focus  {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform .5s ease;
+  }
+  
+  .roompage-full-screen {
+      display: none;
+      @include respond-to('sm') {
+    display: block;
+    background: url(./img/magnify.png) no-repeat right center;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+      }
+  }
+
+  .roompage-opened-fullscreen {
+      display: none;
+  }
+
+  .roompage-exit-button {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    padding: 20px 20px 10px 50px;
+    bottom: 50px;
+    background: #fffded url(./img/exit-full-screen.png) no-repeat 0 0;
+    width: 175px;
+    margin: auto;
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out;
+    color: #939598;
+    font-style: italic;
+  }
+  
+  .roompage-exit-button span {
+    font-family: $Cardo;
+    font-style: italic;
+  }

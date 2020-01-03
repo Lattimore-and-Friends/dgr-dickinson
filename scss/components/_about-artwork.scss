@@ -1,0 +1,56 @@
+.roompage-about-artwork p {
+    font-family: $Cardo;
+    font-size: 1rem;
+    color: #808080;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 30px;
+    @include respond-to('sm') {
+    max-width: 672px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    }
+}
+
+.roompage-about-artwork h4 {
+    font-family: $Cardo;
+    font-size: 1.3125rem;
+    font-style: italic;
+    margin-bottom: 18px;
+    text-align: center;
+    font-weight: normal;
+    @include respond-to('sm') {
+        margin-top: 50px;
+    }
+}
+
+.roompage-about-artwork li {
+    text-align: left;
+    padding-bottom: 30px;
+    color: rgb(64, 64, 64);
+    font-family: Cardo, sans-serif;
+    @include respond-to('sm') {
+        margin-left: 17%;
+    }
+}
+
+.roompage-row-img {
+    height: 210px;
+    width: 100%;
+}
+
+.roompage-row-text {
+    height: 439px;
+    padding-bottom: 92px;
+
+&__div1 {
+    background-color: #333332;
+    color: #fff;
+    text-align: center;
+}
+
+&__div2 {
+    background-color: #ebe8d6;
+    text-align: center;
+}
+}

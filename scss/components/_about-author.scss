@@ -1,0 +1,82 @@
+.roompage-about-author {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    @include respond-to('sm') {
+    margin-bottom: 90px;
+    }
+}
+
+.roompage-about-author__row {
+    @include respond-to('sm') {
+        height: 370px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    } 
+}
+
+.roompage-row-img {
+    @include respond-to('sm') {
+    width: 50%;
+    height: 100%;
+    }
+}
+
+.roompage-about-author__row:nth-of-type(even) {
+-webkit-box-orient: horizontal;
+-webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+        background-color: #ebe8d6;
+}
+
+.roompage-about-author__row:nth-of-type(odd) {
+    background-color: #333332;
+    color: #fff;
+  }
+
+
+.roompage-row-text__div {
+    text-align: center;
+    @include respond-to('sm') {
+    width: 50%;
+    height: 100%;
+    }
+}
+
+.roompage-row-text__div h4 {
+    padding-top: 52px;
+    padding-bottom: 41px;
+    font-family: $Cardo;
+    font-size: 1.3125rem;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+    @include respond-to('sm') {
+        padding-top: 76px;  
+        padding-bottom: 0; 
+    }
+}
+
+.roompage-row-text__div p  {
+    margin: 0 auto;
+    line-height: 2.2;
+    font-family: $Cardo;
+    font-size: 1rem;
+    max-width: 230px;
+    @include respond-to('sm') {
+        padding-top: 39px;
+        line-height: 1.5;   
+        max-width: 395px;
+        height: auto;
+    }
+}

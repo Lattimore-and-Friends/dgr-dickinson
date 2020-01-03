@@ -1,0 +1,46 @@
+.roompage-restoration {
+    margin-bottom: 15px;
+    @include respond-to('sm') {
+        height: 370px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        margin-bottom: 78px;
+    }
+}
+
+.roompage-restoration-text__block {
+    display: none;
+    padding-top: 90px;
+    background-color: #af1a19;
+    color: #fff;
+    text-align: center;
+    @include respond-to('sm') {
+        display: block;
+        width: 50%;
+    }
+}
+
+.roompage-restoration-text {
+    margin-right: 4.125rem;
+    margin-left: 4.125rem;
+    font-family: $Cardo;
+    font-size: 1.625rem;
+    font-style: italic;
+    font-weight: lighter;
+    line-height: 1.6;
+}
+
+.roompage-restoration-img {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    @include respond-to('sm') {
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 50%;
+    }
+}

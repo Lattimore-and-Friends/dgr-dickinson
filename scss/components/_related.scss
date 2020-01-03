@@ -1,0 +1,51 @@
+.roompage-related-section {
+    display: none;
+    @include respond-to('sm') {
+        display: block;
+    }
+}
+
+.roompage-related {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+
+&-img__container {
+    max-width: 328px;
+    text-align: center;
+    height: 400px;
+}
+
+&-img {
+    width: 327px;
+    margin-bottom: 30px;
+    height: 240px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+&-img__info {
+    font-family: $Cardo;
+    font-style: italic;
+    font-size: 1.0625rem;
+}
+}
+
+.related-link {
+    color: #000;
+}
+
+.roompage-related-img {
+  transition: transform .5s ease;
+}
+
+.related-link:hover .roompage-related-img {
+    transform: scale(1.025);
+}
+
+.related-link:hover {
+    color: #af191a;
+}
